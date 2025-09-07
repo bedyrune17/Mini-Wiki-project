@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Biography Page - Dark Aesthetic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: #1f1f1f;
+      border-bottom: 2px solid #333;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00bcd4;
+    }
+    header p {
+      margin-top: 8px;
+      color: #aaaaaa;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+      background: #181818;
+    }
+    .gallery img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 3px solid transparent;
+    }
+    .gallery img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+      border: 3px solid #00bcd4;
+    }
+    section {
+      display: none;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #1e1e1e;
+      border-radius: 15px;
+      line-height: 1.8;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+    section.active {
+      display: block;
+    }
+    section h2 {
+      color: #00bcd4;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #81d4fa;
+      margin-top: 25px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaaaaa;
+      border-top: 1px solid #333;
+      background: #181818;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Personal Biography Page</h1>
+    <p>A Personal Website about Abisheik and Raghuveer made by them </p>
+  </header>
+
+  <!-- Photo navigation -->
+  <div class="gallery">
+    <img src="abishek.jpg" alt="Abishek" onclick="showSection('Abishek')">
+    <img src="raghuveer.jpg" alt="Raghuveer" onclick="showSection('Raghuveer')">
+  </div>
+
+  <!-- Abishek Biography -->
+  <section id="Abishek">
+    <h2>About Abishek</h2>
+    <p><b>Name:</b> Abishek</p>
+
+    <h3>Early Life</h3>
+    <p>Abishek was born and raised in <b>Chennai</b> on <b>6th November 2006</b>, and he has lived his entire life in the city. 
+    He studied at <b>SBOA JC</b> for all his schooling. From a young age, he was known for his <b>hyperactive and energetic personality</b>, 
+    always eager to try out new activities and take part in everything around him. 
+    Whether it was playing cricket, reading books, or simply running around with friends, Abishek was always full of life and enthusiasm.</p>
+
+    <h3>Sports & Achievements</h3>
+    <p>His extroverted nature allowed him to connect with many people, and he became well-liked among his peers. 
+    Abishek’s love for sports was evident early on—he not only played cricket passionately but also represented the <b>Tamil Nadu state team</b>. 
+    Additionally, he brought pride to his school by winning <b>two cluster-level championships in handball</b>, showcasing his talent and dedication in athletics.</p>
+
+    <h3>Academics</h3>
+    <p>Abishek’s academic journey has been filled with <b>ups and downs</b>. 
+    Despite facing challenges at times, he always displayed the determination to overcome obstacles and keep moving forward. 
+    His curiosity about technology grew stronger with time, and he developed a deep interest in <b>coding and computer science</b>. 
+    This passion has guided his academic choices and future goals.</p>
+
+    <h3>Future Aspirations</h3>
+    <p>Looking ahead, Abishek aspires to <b>excel in coding</b> and strengthen his knowledge in computer science. 
+    He is determined to carve out a successful career in the tech field, landing a role where he can apply his skills and continue to grow. 
+    With his extroverted personality, sporting achievements, and resilience in academics, Abishek stands as a well-rounded individual prepared to take on the future with confidence.</p>
+  </section>
+
+  <!-- Raghuveer Biography -->
+  <section id="Raghuveer">
+    <h2>About Raghuveer</h2>
+    <p><b>Name:</b> Raghuveer</p>
+
+    <h3>Early Life</h3>
+    <p>Raghuveer was born on <b>1st August 2006</b> in <b>Chennai</b>. 
+    His educational journey began at <b>Euro Kids</b> for playschool, followed by <b>Kola Perumal</b> for pre-KG. 
+    From <b>LKG to 12th grade</b>, he studied at <b>DAV</b> for 14 years, a school that played a central role in shaping his personality, values, and academic foundation. 
+    During his school years, Raghuveer built strong friendships and grew into an inquisitive and thoughtful individual.</p>
+
+    <h3>Childhood Curiosity</h3>
+    <p>From an early age, Raghuveer showed a love for <b>building and creating</b>. 
+    Between the ages of 9 and 11, he was fascinated with <b>electronics and DIY toys</b>, spending hours experimenting with circuits and gadgets. 
+    This innovative spark hinted at his future career interests and laid the foundation for his passion for engineering.</p>
+
+    <h3>Passion for Football</h3>
+    <p>As he grew older, Raghuveer’s interests shifted toward <b>football</b>. 
+    Since 2018, he has been a devoted supporter of <b>Lionel Messi</b> and the <b>Manchester City Football Club</b>. 
+    Football not only provided him with entertainment but also instilled values of <b>teamwork, discipline, and perseverance</b>. 
+    Following the sport remains one of his favorite pastimes, and he continues to be inspired by his idols.</p>
+
+    <h3>Academics & College</h3>
+    <p>In his <b>10th grade</b>, Raghuveer decided to pursue <b>engineering</b> and began preparing for JEE. 
+    Although he underestimated the intense competition at first, his perseverance and adaptability ensured his success in clearing the <b>VITEEE exam</b>. 
+    Today, he is pursuing a degree in <b>Computer Science at VIT Chennai</b>, aligning perfectly with his long-standing interest in technology and problem-solving.</p>
+
+    <h3>Life at VIT</h3>
+    <p>His time at VIT has been transformative. 
+    Beyond academics, he learned how to <b>socialize and communicate</b> with students from diverse backgrounds across India. 
+    He even picked up conversational Hindi, a skill that helped him connect with a wider group of peers. 
+    These experiences broadened his perspective on life and gave him valuable exposure to different cultures and ideas.</p>
+
+    <h3>Future Aspirations</h3>
+    <p>Raghuveer dreams of becoming a <b>successful software engineer</b> and contributing to impactful projects in the tech industry. 
+    He envisions himself working on innovative solutions while balancing his passion for football and creativity. 
+    His journey from building electronic toys to coding projects in college shows his resilience, adaptability, and ambition. 
+    With his drive and determination, Raghuveer is well-prepared to shape a promising future for himself.</p>
+  </section>
+
+  <footer>
+    <p>Mini Wikipedia Project | Made by Abishek & Raghuveer</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
